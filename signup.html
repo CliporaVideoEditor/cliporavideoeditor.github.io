@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>[PREVIEW] Create Account — Clipora</title>
+    
+    <script src="https://kit.fontawesome.com/eeb01edac2.js" crossorigin="anonymous"></script>
+
+    <meta
+        name="description"
+        content="Create your free Clipora account."
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="cliporavideoeditor.github.io/assets/logo_main.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/assets/css/signup.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Background -->
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+
+    <!-- Top navigation -->
+
+    <header class="topbar">
+
+        <a
+            href="/"
+            class="brand"
+        >
+
+            <img
+                src="https://cliporavideoeditor.github.io/assets/logo_main.png"
+                alt="Clipora"
+            >
+
+            <span>
+                Clipora
+            </span>
+
+        </a>
+
+
+        <a
+            href="/"
+            class="back-link"
+        >
+
+            ← Back to home
+
+        </a>
+
+    </header>
+
+
+
+    <!-- Signup -->
+
+    <main class="signup-wrapper">
+
+
+        <section class="signup-card">
+
+
+            <!-- Logo -->
+
+            <div class="signup-logo-wrapper">
+
+                <img
+                    src="https://cliporavideoeditor.github.io/assets/logo_transparent.png"
+                    alt="Clipora"
+                    class="signup-logo"
+                >
+
+            </div>
+
+
+            <!-- Heading -->
+
+            <div class="signup-heading">
+
+                <h1>
+                    Create your account.
+                </h1>
+
+                <p>
+                    Start creating with Clipora — completely free.
+                </p>
+
+            </div>
+
+
+
+            <!-- Signup form -->
+
+            <form
+                id="signupForm"
+                class="signup-form"
+            >
+
+
+                <!-- Username -->
+
+                <div class="form-group">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Choose a username"
+                        autocomplete="username"
+                        maxlength="24"
+                        required
+                    >
+
+                    <small>
+                        This is how you'll be identified on Clipora. Your username must have at least 3 characters, and there should be no inappropriate language included in the username.
+                    </small>
+
+                </div>
+
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="password-input">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a strong, secure password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Confirm password -->
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm password
+                    </label>
+
+                    <div class="password-input">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Enter your password again here"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="toggleConfirmPassword"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Terms -->
+
+                <label class="terms-row">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required
+                    >
+
+                    <span>
+                        I agree to the
+                        <a href="/terms">
+                            Terms of Service
+                        </a>
+                        and
+                        <a href="/privacy">
+                            Privacy Policy
+                        </a>.
+                    </span>
+
+                </label>
+
+
+
+                <!-- Create account -->
+
+                <button
+                    type="submit"
+                    class="signup-button"
+                >
+
+                    <span>
+                        Create Account
+                    </span>
+
+                    <span class="button-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- Message -->
+
+                <p
+                    class="form-message"
+                    id="formMessage"
+                ></p>
+
+
+            </form>
+
+
+
+            <!-- Divider -->
+
+            <div class="divider">
+
+                <span></span>
+
+                <p>
+                    OR
+                </p>
+
+                <span></span>
+
+            </div>
+
+
+
+            <!-- Social signup -->
+
+            <div class="alternative-signup">
+
+
+                <button
+                    type="button"
+                    class="alternative-button"
+                    id="githubSignup"
+                >
+
+                    <span class="alternative-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </span>
+
+                    Continue with GitHub
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="alternative-button"
+                    id="googleSignup"
+                >
+
+                    <span class="alternative-icon google-icon">
+                        <i class="fa-brands fa-google"></i>
+                    </span>
+
+                    Continue with Google
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- Login -->
+
+            <div class="login-prompt">
+
+                <span>
+                    Already have an account?
+                </span>
+
+                <a href="/login">
+                    Log in
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- Footer -->
+
+        <footer class="signup-footer">
+
+
+             <div class="footer-watermark">
+
+                <div class="watermark-icon">
+                    
+            <img src="https://yt3.googleusercontent.com/04qTd4043Tkyy2GR090YB-PyrxE0I2TFyoA9k4Y3lS9ALY3CpZz_--56fUZPTCP-eIDya5-vr2w=s999-c-k-c0x00ffffff-no-rj" class="watermark-icon" />
+
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Made by NothingButTyler
+                    </strong>
+
+                       <strong>To visit, please visit:<a
+                    href="https://nbtofcl.short.gy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    nbtofcl.short.gy
+
+                </a></strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="/">
+                    Home
+                </a>
+
+                <a href="/about">
+                    About
+                </a>
+
+                <a href="/privacy">
+                    Privacy
+                </a>
+
+                <a href="/terms">
+                    Terms
+                </a>
+
+            </div>
+
+
+            <p class="copyright">
+                © 2026 Clipora.
+            </p>
+
+
+        </footer>
+
+
+    </main>
+
+
+
+    <script src="/assets/js/signup.js"></script>
+
+</body>
+
+</html>
